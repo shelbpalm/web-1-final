@@ -1,0 +1,283 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+h2 {
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+}
+h3 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+p {
+  font-family: Montserrat, sans-serif;
+}
+body {
+  background-color: #e2f6f8;
+}
+/*header grid*/
+.head {
+  background-color: #fcdfab;
+  display: grid;
+  width: 900px;
+  grid-gap: 20px;
+  padding: 10px;
+}
+.logo {
+  grid-area: 1 / 1 / span 2 / span 2;
+  text-align: center;
+  padding: 10px;
+}
+#SPlogo {
+  width: 300px;
+}
+.selfie {
+  grid-area: 1 / 3 / span 2 / span 3;
+  text-align: center;
+  padding: 10px;
+}
+#selfie {
+  height: 200px;
+  border-radius: 5px;
+}
+/*nav grid*/
+nav {
+  background-color: #73d2de;
+  display: grid;
+  width: 900px;
+  grid-gap: 5px;
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  color: #8F2D56;
+  font-weight: 500;
+}
+nav a{
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  transition: all 200ms linear;
+}
+nav a:hover{
+  color: #8F2D56;
+}
+.portfolio-nav {
+  grid-area: 1 / 4 / span 1 / span 1;
+}
+.about-nav {
+  grid-area: 1 / 5 / span 1 / span 1;
+}
+.contact-nav {
+  grid-area: 1 / 6 / span 1 / span 1;
+}
+/*portfolio grid*/
+.portfolio {
+  display: grid;
+  width: 900px;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.image {
+  text-align: center;
+  padding: 10px;
+}
+.card1 {
+  background-color: #fffdfa;
+  border-radius: 5px;
+  grid-area: 1 / 1 / span 2 / span 2;
+}
+
+#waving {
+  height: 200px;
+}
+.card2 {
+  background-color: #fffdfa;
+  border-radius: 5px;
+  grid-area: 1 / 3 / span 2 / span 2;
+}
+#makerspace {
+  height: 200px;
+}
+.card3 {
+  background-color: #fffdfa;
+  border-radius: 5px;
+  grid-area: 3 / 1 / span 2 / span 2;
+}
+#symposium {
+  width: 350px;
+}
+.card4 {
+  background-color: #fffdfa;
+  border-radius: 5px;
+  grid-area: 3 / 3 / span 2 / span 2;
+}
+#records {
+  height: 200px;
+}
+.portfolio p {
+  padding: 10px;
+}
+/*about area grid*/
+.about {
+  background-color: #fcdfab;
+  display: grid;
+  width: 900px;
+  grid-gap: 5px;
+  padding: 10px;
+}
+.What-I-Do {
+  grid-area: 1 / 1 / 2 / 5;
+}
+.What-I-Do p {
+  text-align: center;
+}
+.About-Me {
+  grid-area: 2 / 1 / 3 / 5;
+}
+.About-Me p {
+  text-align: justify;
+  padding: 0px 100px 0px 100px;
+}
+/*footer grid*/
+footer {
+  background-color: #73d2de;
+  display: grid;
+  width: 900px;
+  grid-gap: 5px;
+  padding: 10px;
+  text-align: center;
+}
+#instalogo {
+  height: 20px;
+}
+footer a{
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  transition: all 200ms linear;
+}
+footer a:hover{
+  color: #8F2D56;
+}
+
+/*Media Queries*/
+/*tablet*/
+@media (max-width:768px) {
+ /*header grid*/
+.head {
+  width: 95%;
+  grid-gap: 10px;
+  padding: 5px;
+}
+ #SPlogo {
+  width: 15em;
+}
+  #selfie {
+  height: 10em;
+  border-radius: 5px;
+}
+   /*nav grid*/
+  nav {
+  width: 95%;
+  padding: 0px 5px 0px 5px;
+  }
+  /*portfolio grid*/
+.portfolio {
+  display: grid;
+  width: 95%;
+  grid-gap: 10px;
+  padding: 10px;
+}
+  .portfolio p{
+    font-size: 0.75em;
+  }
+  #waving {
+  height: 150px;
+}
+  #makerspace {
+  height: 150px;
+}
+  #symposium {
+  width: 250px;
+}
+  #records {
+  height: 150px;
+}
+  .about {
+  width: 95%;
+  padding: 5px;
+}
+  .about p{
+  font-size: 0.75em;
+  }
+  footer {
+  width: 95%;
+  padding: 5px;
+  font-size: 0.75em;
+}
+}
+  /*mobile*/
+  @media (max-width:500px) {
+     /*header grid*/
+.head {
+  width: 95%;
+  grid-gap: 10px;
+  padding: 5px;
+}
+ #SPlogo {
+  width: 15em;
+}
+  #selfie {
+  height: 10em;
+  border-radius: 5px;
+}
+   /*nav grid*/
+  nav {
+  width: 95%;
+  padding: 0px 5px 0px 5px;
+  }
+  /*portfolio grid*/
+.portfolio {
+  display: grid;
+  width: 95%;
+  grid-gap: 10px;
+  padding: 10px;
+}
+  .portfolio p{
+    font-size: 0.75em;
+  }
+    .portfolio h3{
+      font-size: 1em;
+    }
+  #waving {
+  height: 5em;
+}
+  #makerspace {
+  height: 5em;
+}
+  #symposium {
+  width: 10em;
+}
+  #records {
+  height: 5em;
+}
+  .about {
+  width: 95%;
+  padding: 5px;
+}
+  .about p{
+  font-size: 0.75em;
+  }
+    .about h1{
+      font-size: 1.5em;
+    }
+  footer {
+  width: 95%;
+  padding: 5px;
+  font-size: 0.75em;
+}
+  }
